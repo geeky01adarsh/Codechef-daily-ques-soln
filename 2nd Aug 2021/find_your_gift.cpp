@@ -30,9 +30,9 @@ int main()
         ll x = 0, y = 0;
         if (s[0] == 'L')
             x--;
-        else if (s[0] = 'R')
+        else if (s[0] == 'R')
             x++;
-        else if (s[0] = 'U')
+        else if (s[0] == 'U')
             y++;
         else
             y--;
