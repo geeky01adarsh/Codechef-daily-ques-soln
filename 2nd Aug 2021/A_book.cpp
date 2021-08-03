@@ -16,24 +16,25 @@
 #define endl "\n"
 using namespace std;
 
-
-int main(){
+int main()
+{
     ll t;
-    cin>>t;
-    while(t--){
+    cin >> t;
+    while (t--)
+    {
         ll n;
-        cin>>n;
+        cin >> n;
         ll arr[n];
-        for(ll i=0; i<n; i++) cin>>arr[i];
-        for(ll i=0; i<n; i++){
-            int j=i+1;
-            while (arr[i]==arr[j] && j<n)
+        for (ll i = 0; i < n; i++)
+            cin >> arr[i];
+        for (ll i = 0; i < n; i++)
+        {
+            int j = i + 1;
+            while (arr[i] == arr[j] && j < n)
             {
                 j++;
             }
-            cout<<(n-j)<<" ";
-
-            
+            cout << (n - j) << " ";
         }
         cout << endl;
     }
